@@ -16,10 +16,7 @@ pipeline {
  
     stage('Build') {
       steps {
-        sh '''
-        export PATH=$PATH:/root/.nvm/versions/node/v12.22.12/bin
-        npm install
-        '''
+            sh 'npm install'
       }
     }
   
