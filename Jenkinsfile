@@ -9,13 +9,21 @@ pipeline {
       }
     }
     
+ pipeline {
+  agent any
+  
+  stages {
     stage('Build') {
       steps {
-        // Install project dependencies and build the Angular app
-        sh 'npm install'
-        sh 'ng build --prod'
+        sh '''
+        export PATH=$PATH:/root/.nvm/versions/node/v12.22.12/bin
+        npm install
+        '''
       }
     }
+  }
+}
+
     
 
   }
