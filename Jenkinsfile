@@ -8,11 +8,8 @@ pipeline {
         git 'https://github.com/riadh70/angular.git '
       }
     }
-    
- pipeline {
-  agent any
-  
-  stages {
+     
+ 
     stage('Build') {
       steps {
         sh '''
@@ -21,8 +18,8 @@ pipeline {
         '''
       }
     }
-  }
-}
+  
+
 
     
 
