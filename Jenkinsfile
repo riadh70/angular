@@ -1,9 +1,9 @@
 pipeline {
   agent any 
   
-   environment {
-    PATH = "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/.nvm/versions/node/v12.22.12/bin"
-  }
+//   environment {
+//    PATH = "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/.nvm/versions/node/v12.22.12/bin"
+//  }
   
   stages {
     stage('Checkout') {
